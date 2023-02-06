@@ -11,5 +11,5 @@ Los recursos/herramientas utilizados son:
  -> Iconfinder
  -> Flaticon
  -> Pexels 
- -> Netlify -------> Link: https://trabajofinal-cv.netlify.app
+ -> Netlify -------> Link:  https://trabajofinal-cv.netlify.app
  
