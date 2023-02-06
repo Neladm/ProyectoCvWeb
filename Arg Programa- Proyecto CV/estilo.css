@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Syne&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contenedor-header{
+    background: #0c0c0f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+      
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;    
+    
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;       
+}
+
+.contenedor-header header nav ul li a{
+    
+color: #e1e1e5;
+margin: 30px;
+padding: 10px;
+transition: .5s;
+text-decoration: none;
+align-items: center;
+}
+
+.contenedor-header header nav ul li a:hover{
+ color: rgb(190, 32, 103);
+}
+
+
+
+.inicio{
+    background: linear-gradient(to top, rgba(30, 35, 38, 0.241), rgba(30, 35, 38, 0.97)),
+    url(./img/fondo1.png) ;
+    background-size: cover;
+    height: 100vh;
+    color:  #e1e1e5;
+    display: flex;
+    align-items: center;
+    
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: rgba(190, 32, 103, 0.696);
+   
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px 10px  ;
+    border-style: solid;
+    border-color: #e1e1e5;
+    border-width: 5px;
+    
+}
+
+
+.inicio .contenido-banner h1{
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: 'Philosopher', sans-serif;
+   font-weight: bold;
+    
+}
+
+.inicio .contenido-banner h2{
+    font-size: 25px;
+    font-family: 'Philosopher', sans-serif;
+   
+}
+
+
+
+.inicio .contenido-banner .redes a{
+    color:  #e1e1e5;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid  #e1e1e5;
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+    background-color: rgb(192, 79, 130);
+}
+
+.sobremi{
+    background-color:  #0c0c0f;
+    color:  #e1e1e5;
+    padding: 50px 20px ;
+}
+
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2{
+    font-size: 55px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenido-seccion p{
+    font-size: 20px;    
+    line-height: 22px;
+    margin-bottom: 20px;
+
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+    
+}
+
+.sobremi .fila .col h3{
+    font-size: 35px;
+    font-family: 'Syne', sans-serif;
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    font-size: 20px;
+    display: inline-block;
+    color: palevioletred;
+    width: 50px;
+    
+  
+} 
+.sobremi .fila .col p{
+    font-size: 18px;    
+    line-height: 22px;
+    margin-bottom: 35px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid  #e1e1e5;
+    border-radius: 30px;  
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #e1e1e5;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(190, 32, 103);
+    z-index: -1;
+    transition:  box-shadow 0.25s ease 0s;
+    border-radius: 25px;
+   
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
+    background: linear-gradient(117deg, rgba(98, 2, 56, 0.91), rgba(189, 49, 133, 0.712));
+    box-shadow: 0 0.1rem 0.8rem rgba(249, 64, 178, 0.674);
+}
+
+
+.skills{
+    background: linear-gradient(to left, rgba(30, 35, 38, 0.241), rgba(30,35,38,1)),
+    url(./img/fondoskills.png) ;
+    background-size: cover;
+    height: 100vh;
+    color:  #e1e1e5;
+    display: flex;
+    align-items: center;
+    
+}
+
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2{
+    font-size: 55px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila{
+    display: flex;
+}
+
+.skills .fila .col{
+    width: 50%;
+    pad: 0 20px;
+}
+
+.skills .fila .col h3{
+    font-size: 35px;
+    font-family: 'Syne', sans-serif;
+    margin-bottom: 25px;
+}
+
+.skills .fila .col .iconos{
+ gap: 5px;
+}
+
+
+.curriculum{   
+    background-color: #0c0c0f;
+    color: #e1e1e5;
+    padding: 50px 20px ;
+}
+
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2{
+    font-size: 55px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 35px;
+    font-family: 'Syne', sans-serif;
+    margin-bottom: 25px;
+}
+
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #0c0c0f;
+    position: relative;
+    border-radius: 40px 10px;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+   color: palevioletred;
+   font-size: 22px;
+   font-weight: bold;
+   display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: palevioletred;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+
+.curriculum .fila .izq{
+    border-left:  2px solid palevioletred;
+    margin-right: 20px;
+    box-shadow: 0px 0px 48px 9px rgba(227, 25, 150, 0.79);
+}
+
+.curriculum .fila .der{
+    border-right:  2px solid palevioletred;
+    margin-left: 20px;
+    box-shadow: 0px 0px 48px 9px rgba(227, 25, 150, 0.79);
+}
+
+
+
+.portfolio{
+    background-color: #0c0c0f;
+    color: #e1e1e5;
+    padding: 50px 20px ;
+    
+   
+}
+
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    
+    
+}
+
+.portfolio h2{
+    font-size: 55px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.portfolio h5 {
+    color: palevioletred;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.portfolio p{
+    color: #e1e1e5;
+}
+.portfolio .card{
+    background-color: #0c0c0f;
+    border-radius: 40px 10px;
+    margin-left: 25px;
+   cursor: pointer;
+       
+}
+.portfolio .card:hover{
+    
+    box-shadow: 0px 0px 48px 9px rgba(227, 25, 150, 0.79);
+}
+.contacto{
+    background: linear-gradient(to bottom, rgba(30, 35, 38, 0.781), rgba(30,35,38,1)) ,
+    url(./img/fondo2.png)  ;
+    background-size: cover;    
+    color: #e1e1e5;
+    padding: 50px 20px ;  
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;   
+    width: 800px;
+    height: 500px;
+    
+}
+
+.contacto h2{
+    font-size: 55px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto ul{
+    list-style: none;
+}
+.contacto .contenido-seccion form li label{
+    display: block;
+    color: #e1e1e5;
+   
+}
+.contacto .contenido-seccion form li input{
+    width: 100%;
+    border-radius: 10px 30px;
+    color: #e1e1e5;
+    background: #0c0c0f;
+    border: 1px solid #cfd8dc;
+    margin: 15px 0;
+    height: 45px;
+    
+    
+}
+.contacto .contenido-seccion form li textarea{
+    width: 100%;
+    border-radius: 10px 30px;
+    background-color: #0c0c0f;
+    color:  #e1e1e5;
+    border: 1px solid rgb(247, 247, 247);
+    margin-top:  8px;
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #e1e1e5;
+    border-radius: 30px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #e1e1e5;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(190, 32, 103);
+    z-index: -1;
+    border-radius: 30px;
+   
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+    background: linear-gradient(117deg, rgba(98, 2, 56, 0.91), rgba(189, 49, 133, 0.712));
+    box-shadow: 0 0.1rem 0.8rem rgba(249, 64, 178, 0.674);
+}
+
+footer{
+    background-color:  #0c0c0f;
+    color: #e1e1e5;
+    padding:  30px  ;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer h6{
+    font-size: small;
+    text-align: justify;
+      
+}
+footer a{
+    text-decoration: none;
+    color: rgb(190, 32, 103);
+}
+footer .arriba{
+    
+    width: 50px;
+    height: 50px;
+    background-color: rgb(190, 32, 103);
+    color: #e1e1e5;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 25%;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+    
+
+}
